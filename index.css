@@ -8,6 +8,19 @@
   font-style: normal;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  max-width: 1120px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +73,7 @@ main .preview .info {
 main .preview .info h1 {
   color: var(--main-black, #181717);
   font: 500 60px DM Sans;
+  width: 356px;
 }
 
 main .preview .info p {
@@ -76,5 +90,86 @@ main .preview .image {
   background-size: contain;
   width: 33px;
   height: 39px;
+}
+
+main .project {
+  margin: 83px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #000;
+  padding-bottom: 108px;
+}
+
+main .project-info {
+  width: 356px;
+}
+
+main .project-info h2 {
+  color: #181717;
+  font: 500 24px DM Sans;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+
+main .project-info__text {
+  color: var(--main-black, #181717);
+  font: 400 22px DM Sans;
+  padding-bottom: 50px;
+}
+
+main .project-info__lang {
+  color: var(--main-gray, #606060);
+  font: 400 22px DM Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 0 160px 0;
+}
+
+main .project-info a {
+  color: var(--main-black, #181717);
+  font: 500 22px DM Sans;
+}
+
+main .project-visual {
+  background: url(./src/img/garyRectangle.png);
+  width: 640px;
+  height: 365px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+footer .name {
+  color: #2429af;
+  font: 500 22px DM Sans;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav a {
+  color: var(--main-black, #181717);
+  font: 500 22px DM Sans;
+  padding-left: 31px;
+  text-decoration: none;
+}
+
+.noBorder {
+  border: none;
 }
 /*# sourceMappingURL=index.css.map */

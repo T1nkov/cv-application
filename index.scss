@@ -6,8 +6,14 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  max-width: 1120px;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -29,37 +35,100 @@ header {
   }
 }
 
-main{
-    .preview{
-       margin: 120px 0 0 0;
-        .info{
-           display: flex; 
-           justify-content: space-between;
-           align-items: center;
-           margin: 0 0 128px 0;
-           h1{
-            color: var(--main-black, #181717);
-            font:500 60px DM Sans;
-            
-           }
+main {
+  .preview {
+    margin: 120px 0 0 0;
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 128px 0;
 
-           p{
-            color: #606060;
-            /* Heading-2 */
-            font:400 32px DM Sans;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 400;
-           }
-        }
+      h1 {
+        color: var(--main-black, #181717);
+        font: 500 60px DM Sans;
+        width: 356px;
+      }
 
-        .image{
-            
-            background: url(./src/img/pointer.svg) no-repeat;
-            background-size: contain;
-            width: 33px;
-            height: 39px;
-        }
-
+      p {
+        color: #606060;
+        /* Heading-2 */
+        font: 400 32px DM Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+      }
     }
+
+    .image {
+      background: url(./src/img/pointer.svg) no-repeat;
+      background-size: contain;
+      width: 33px;
+      height: 39px;
+    }
+  }
+  .project {
+    margin: 83px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+    padding-bottom: 108px;
+    &-info {
+      width: 356px;
+      h2 {
+        color: #181717;
+        font: 500 24px DM Sans;
+        padding-bottom: 25px;
+        text-transform: uppercase;
+      }
+
+      &__text {
+        color: var(--main-black, #181717);
+        font: 400 22px DM Sans;
+        padding-bottom: 50px;
+      }
+      &__lang {
+        color: var(--main-gray, #606060);
+        font: 400 22px DM Sans;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        padding: 0 0 160px 0;
+      }
+      a {
+        color: var(--main-black, #181717);
+        font: 500 22px DM Sans;
+      }
+    }
+    &-visual {
+      background: url(./src/img/garyRectangle.png);
+      width: 640px;
+      height: 365px;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  .name {
+    color: #2429af;
+    font: 500 22px DM Sans;
+  }
+
+  nav {
+    display: flex;
+    a {
+      color: var(--main-black, #181717);
+      font: 500 22px DM Sans;
+      padding-left: 31px;
+      text-decoration: none;
+    }
+  }
+}
+
+.noBorder {
+  border:none;
+  
 }
