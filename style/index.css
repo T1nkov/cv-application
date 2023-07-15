@@ -77,7 +77,12 @@ main .preview .info h1 {
   width: 356px;
 }
 
-main .preview .info p {
+main .preview .info nav .about:hover {
+  color: var(--main-black, #383636);
+  cursor: pointer;
+}
+
+main .preview .info nav p {
   color: #606060;
   /* Heading-2 */
   font: 400 32px DM Sans;
@@ -87,7 +92,7 @@ main .preview .info p {
 }
 
 main .preview .image {
-  background: url(./src/img/pointer.svg) no-repeat;
+  background: url(../src/img/garyRectangle.png) no-repeat;
   background-size: contain;
   width: 33px;
   height: 39px;
@@ -140,7 +145,7 @@ main .project-info a {
 }
 
 main .project-visual {
-  background: url(./src/img/garyRectangle.png);
+  background: url(../src/img/garyRectangle.png);
   width: 640px;
   height: 365px;
 }

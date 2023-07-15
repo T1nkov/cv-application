@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+header {
+  margin: 95px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    color: #181717;
+    font: 500 50px DM Sans, sans-serif;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+
+    p {
+      //   margin: 0 30px 0 0;
+      color: var(--main-black, #181717);
+      font: 500 22px DM Sans, sans-serif;
+    }
+    p:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+main {
+  .contact {
+    margin: 109px 0 0 0;
+    h1 {
+      color: var(--main-black, #181717);
+      font: 500 60px DM Sans;
+    }
+    &-text {
+      color: var(--main-gray, #606060);
+      font: 400 22px DM Sans;
+      margin: 32px 0 52px 0;
+    }
+
+    &-form {
+      display: flex;
+      &-inputs {
+        input {
+          width: 676px;
+          height: 50px;
+          border-radius: 5px;
+          border: 1px solid #c4c4c4;
+          background: #fff;
+          color: #c4c4c4;
+          font: 400 15px Inter;
+        }
+        .forma {
+          margin: 0 0 30px 0;
+        }
+      }
+      &-text {
+        color: var(--main-gray, #606060);
+        font-family: DM Sans;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 117%; /* 25.74px */
+        letter-spacing: -0.66px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 0 0 47px;
+      }
+    }
+    &-btn {
+      margin: 35px 0 0 0;
+      width: 162px;
+      height: 42px;
+      border-radius: 5px;
+      background: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+  .name {
+    color: #2429af;
+    font: 500 22px DM Sans;
+  }
+
+  nav {
+    display: flex;
+    a {
+      color: var(--main-black, #181717);
+      font: 500 22px DM Sans;
+      text-decoration: none;
+    }
+    a:not(:last-child) {
+      padding: 0 31px 0 0;
+    }
+  }
+}

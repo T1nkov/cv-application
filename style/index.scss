@@ -50,7 +50,12 @@ main {
         font: 500 60px DM Sans;
         width: 356px;
       }
-
+      nav{
+        .about:hover{
+          color: var(--main-black, #383636);
+          cursor: pointer;
+        }
+      
       p {
         color: #606060;
         /* Heading-2 */
@@ -60,9 +65,9 @@ main {
         font-weight: 400;
       }
     }
-
+  }
     .image {
-      background: url(./src/img/pointer.svg) no-repeat;
+      background: url(../src/img/garyRectangle.png) no-repeat;
       background-size: contain;
       width: 33px;
       height: 39px;
@@ -105,7 +110,7 @@ main {
       }
     }
     &-visual {
-      background: url(./src/img/garyRectangle.png);
+      background: url(../src/img/garyRectangle.png);
       width: 640px;
       height: 365px;
     }
