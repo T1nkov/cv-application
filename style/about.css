@@ -8,7 +8,12 @@
   font-style: normal;
 }
 
-header {
+.wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.wrapper header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,12 +22,12 @@ header {
           justify-content: space-between;
 }
 
-header h1 {
+.wrapper header h1 {
   color: #181717;
   font: 500 50px DM Sans, sans-serif;
 }
 
-header nav {
+.wrapper header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,16 +40,16 @@ header nav {
           justify-content: space-between;
 }
 
-header nav p {
+.wrapper header nav p {
   color: var(--main-black, #181717);
   font: 500 22px DM Sans, sans-serif;
 }
 
-header nav p:hover {
+.wrapper header nav p:hover {
   text-decoration: underline;
 }
 
-main .prewiev {
+.wrapper main .prewiev {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,32 +59,110 @@ main .prewiev {
   margin: 147px 0 0 0;
 }
 
-main .prewiev-info {
+.wrapper main .prewiev-info {
   width: 575px;
 }
 
-main .prewiev-info__educ {
+.wrapper main .prewiev-info__educ {
   margin: 20px 0 0 0;
 }
 
-main .prewiev-info h1 {
+.wrapper main .prewiev-info h1 {
   color: var(--main-black, #181717);
   font: 500 60px DM Sans;
   margin: 0 0 47px 0;
+  display: inline;
 }
 
-main .prewiev-info p {
+.wrapper main .prewiev-info p {
   color: var(--main-gray, #606060);
-  font-family: 400 24px DM Sans;
+  font: 400 24px DM Sans;
+  padding: 47px 0 0 0;
 }
 
-main .prewiev-image {
+.wrapper main .prewiev-image {
   background: url(../src/img/Thumbnail.png);
   width: 405px;
   height: 457px;
 }
 
-main .skill-hard {
+.wrapper main .skill {
+  padding: 169px 0 110px 0;
+}
+
+.wrapper main .skill-hard {
   width: 650px;
+}
+
+.wrapper .email {
+  padding: 71px 0 0 0;
+  border-top: 2px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .email-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.wrapper .email-text-info {
+  width: 347px;
+}
+
+.wrapper .email-text-info h1 {
+  color: #181717;
+  font: 400 32px DM Sans;
+}
+
+.wrapper .email-text-image {
+  background: url(../src/img/pointer2.svg) no-repeat;
+  width: 25px;
+  height: 24px;
+  margin: 0 0 0 41px;
+}
+
+.wrapper .email-link {
+  color: #181717;
+  font: 400 32px DM Sans;
+}
+
+.wrapper footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 0 0;
+}
+
+.wrapper footer .name {
+  color: #2429af;
+  font: 500 22px DM Sans;
+}
+
+.wrapper footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper footer nav a {
+  color: var(--main-black, #181717);
+  font: 500 22px DM Sans;
+  text-decoration: none;
+}
+
+.wrapper footer nav a:not(:last-child) {
+  padding: 0 31px 0 0;
 }
 /*# sourceMappingURL=about.css.map */
